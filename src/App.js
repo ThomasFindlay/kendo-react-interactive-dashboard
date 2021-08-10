@@ -74,9 +74,12 @@ function App() {
   const [positions, setPositions] = useState(getPositions(initialPositions));
   const [widgets, setWidgets] = useState(widgetsConfig);
 
+  // Filter out widgets that are inactive
   const activeWidgets = useMemo(() => {
     return widgets.reduce((acc, widget) => {
+      // Bail out if widget is not active
       if (!widget.active) return acc;
+      // Widget is active, so add it
       acc.push(widget);
       return acc;
     }, []);
