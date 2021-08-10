@@ -1,2 +1,81 @@
 .App {
+  max-width: 70rem;
+  margin: 2rem auto;
+}
+
+.activeJobs,
+.jobCredits {
+  height: 100%;
+}
+
+.activeJobs,
+.activeJobsContainer,
+.jobViewsContainer,
+.jobViewsBlock,
+.jobCredits,
+.jobCreditsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobViewsContainer,
+.activeJobsContainer,
+.jobCreditsContainer {
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.jobViewsContainer {
+  border: 1px solid #7c3aed;
+  background-color: #ede9fe;
+  color: #7c3aed;
+}
+
+.activeJobsContainer {
+  border: 1px solid #2563eb;
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.jobCreditsContainer {
+  color: #b45309;
+  border: 1px solid #b45309;
+  background-color: #fef3c7;
+}
+
+.activeJobsNum,
+.jobViews,
+.jobCreditsNum {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.jobViewsBlock {
+  flex-direction: column;
+}
+
+.jobTitle {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  display: block;
+}
+
+.totalJobViewsGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  padding: 0;
+}
+
+.tileLayout {
+  width: 100%;
+}
+
+.dashboardAside {
+  width: 15rem;
 }
