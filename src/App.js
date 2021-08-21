@@ -126,7 +126,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Job dashboard</h1>
+      <h1>Creating the React UI Template for Our Jobs Dashboard</h1>
       <div className="k-display-flex">
         <TileLayout
           columns={4}
